@@ -1,0 +1,40 @@
+.reader-suggest-main-body {
+  margin-bottom: 100px;
+  margin-left: 200px;
+  width: 950px; }
+
+.slide .slide-prev, .slide .slide-next {
+  background: url(../images/book_fanye_btn.png);
+  cursor: pointer;
+  height: 48px;
+  position: absolute;
+  text-indent: -10000px;
+  top: 99.66667px;
+  width: 25px; }
+.slide .slide-prev {
+  background-position: 0 0;
+  left: 2px; }
+.slide .slide-prev.on {
+  background-position: 0 -51px; }
+.slide .slide-next {
+  background-position: -27px 0;
+  right: 2px; }
+.slide .slide-next.on {
+  background-position: -27px -51px; }
+.slide .slide-btns {
+  position: absolute;
+  left: 0;
+  bottom: 7.5px;
+  text-align: center;
+  width: 100%; }
+  .slide .slide-btns li {
+    background: url(../images/diandian_bg2.png) 0 -20px;
+    cursor: pointer;
+    display: inline-block;
+    height: 10px;
+    line-height: 10px;
+    margin: 0 5px;
+    text-indent: -10000px;
+    width: 10px; }
+  .slide .slide-btns li.on {
+    background-position: 0 0; }

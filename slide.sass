@@ -1,0 +1,71 @@
+
+
+.reader-suggest-main-body
+	margin-bottom: 100px
+	margin-left: 200px 
+	width: 950px
+	// border: 1px solid black
+
+// .slide
+// 	height: $show-height
+// 	overflow: hidden 
+// 	position: relative
+// 	width: $show-width 
+// 	.book
+// 		margin-bottom: $btn-space
+
+
+.slide 
+	$btn-space: 30px
+	$show-width: 950px
+	$show-height: 269px + $btn-space
+	$nav-img: "../images/book_fanye_btn.png"
+	$btn-img: "../images/diandian_bg2.png"
+	$btn-width: 10px 
+	$btn-height: 10px 
+	$nav-height: 48px
+	$nav-width: 25px
+	.slide-prev, .slide-next
+		background: url(#{$nav-img})
+		cursor: pointer
+		height: $nav-height
+		position: absolute
+		text-indent: -10000px
+		top: $show-height / 3
+		width: $nav-width
+		// z-index: 1000
+
+	.slide-prev
+		background-position: 0 0
+		left: 2px
+	.slide-prev.on
+		background-position: 0 -#{$nav-height + 3px}
+
+	.slide-next
+		background-position: -#{2 + $nav-width} 0
+		right: 2px
+	.slide-next.on 
+		background-position: -#{2 + $nav-width} -#{$nav-height + 3px}
+
+	// 原点按钮样式
+	.slide-btns
+		// border: 1px solid black
+		position: absolute 
+		left: 0
+		bottom: $btn-space / 4
+		text-align: center
+		width: 100%
+		li 
+			// border: 1px solid black
+			background: url(#{$btn-img}) 0 -20px
+			// float: left
+			cursor: pointer
+			display: inline-block
+			height: $btn-height
+			line-height: $btn-height
+			margin: 0 5px
+			// text-align: center
+			text-indent: -10000px 
+			width: $btn-width
+		li.on 
+			background-position: 0 0
